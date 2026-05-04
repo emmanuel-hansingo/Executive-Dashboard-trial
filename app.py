@@ -148,14 +148,15 @@ app.layout = html.Div([
         id="detail-table",
         page_size=8,
         style_table={"overflowX":"auto"},
-        style_cell={"textAlign":"left"},
+        style_cell={"textAlign":"center"},
         style_header={"fontWeight":"bold"}
     )
 
 ],
 style={
     "padding":"30px",
-    "backgroundColor":"#f5f5f5"
+    "backgroundColor":"#f5f5f5",
+    "width":"135%"
 })
 
 
@@ -263,5 +264,6 @@ def update_dashboard(region, product):
 # =========================
 # RUN APP
 # =========================
+
 if __name__ == "__main__":
     app.run(debug=True)
